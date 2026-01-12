@@ -59,11 +59,12 @@ export default function NewsDetail({ params }: { params: { id: string } }) {
           </div>
 
           {/* Featured Image */}
-          <div className="w-full h-96 bg-gradient-to-r from-primary to-secondary rounded-lg overflow-hidden">
-            <img
+          <div className="w-full h-96 bg-gradient-to-r from-primary to-secondary rounded-lg overflow-hidden relative">
+            <Image
               src="https://images.unsplash.com/photo-1677442d019cecf8978c40f3313808d3cdc2c531d?w=1000&h=400&fit=crop"
               alt="Featured"
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
 
@@ -74,8 +75,8 @@ export default function NewsDetail({ params }: { params: { id: string } }) {
 
               {/* Highlight Quote */}
               <blockquote className="border-l-4 border-accent pl-6 py-4 italic text-accent/80">
-                "Este é um destaque importante que deve ser lembrado. A comunidade nerd está crescendo 
-                cada vez mais e moldando a cultura pop atual."
+                &ldquo;Este é um destaque importante que deve ser lembrado. A comunidade nerd está crescendo 
+                cada vez mais e moldando a cultura pop atual.&rdquo;
               </blockquote>
 
               <p>{newsContent}</p>

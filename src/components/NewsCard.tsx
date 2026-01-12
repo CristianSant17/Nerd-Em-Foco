@@ -25,10 +25,11 @@ export default function NewsCard({
     <article className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300 border border-primary/20">
       {image && (
         <div className="w-full h-48 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
-          <img
-            src={image}
+          <Image
+            src={image!}
             alt={title}
-            className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+            fill
+            className="object-cover hover:scale-110 transition-transform duration-300"
           />
           <div className="absolute top-0 right-0 bg-secondary px-3 py-1 text-xs font-bold text-dark m-2 rounded">
             {category}
