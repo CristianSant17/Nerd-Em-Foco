@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import Image from 'next/image'
 import CommentSection from '@/components/CommentSection'
 
 export default function NewsDetail({ params }: { params: { id: string } }) {
