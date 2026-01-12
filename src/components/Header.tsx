@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -9,8 +10,8 @@ export default function Header() {
   return (
     <header className="bg-gradient-to-r from-primary to-secondary shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="text-3xl font-bold text-light">🎮</div>
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/logo-4.png" alt="Nerd Em Foco" width={56} height={56} className="rounded" />
           <div>
             <h1 className="text-2xl font-bold text-light">Nerd Em Foco</h1>
             <p className="text-sm text-light/80">Notícias do universo nerd</p>

@@ -4,6 +4,10 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Nerd Em Foco",
   description: "Notícias sobre o mundo nerd em geral",
+  icons: {
+    icon: '/marca-dagua.png',
+    apple: '/marca-dagua.png',
+  },
 }
 
 export default function RootLayout({
